@@ -1,0 +1,589 @@
+/*** CSS for listPropertiesView propertyCard & see all photo pages ***/
+.indexProperties {
+    margin-top: 350px;
+}
+
+#properties {
+    width: 100%;
+    padding-top: 1.25rem;
+}
+
+#properties h2 {
+    margin-bottom: 1.5rem;
+}
+
+#propertyDetails {
+    color: black;
+}
+
+#propertyDetails p {
+    margin: 0.25rem;
+}
+
+.property {
+    padding-bottom: 20px;
+    margin: 1.25rem;
+    width: 22rem;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.validation
+{
+    border: 1px solid rgb(229, 229, 229);
+
+}
+
+.validation1
+{
+    border: 3px solid rgb(41, 163, 118);
+    /* padding: -3px */
+    /* position: inherit;
+    z-index: 999999; */
+}
+
+/* #propertiesSearchList .property
+{
+    padding: 0;
+} */
+
+.property:hover {
+    transform: scale(1.01);
+}
+
+
+.propertyImgContainer {
+    width: 100%;
+    height: 15.625rem;
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.propertyImgContainer img, .propImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* position: inherit;
+    z-index: -99; */
+}
+
+.price {
+    color: black;
+}
+
+.price span {
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+
+
+/* SINGLE DETAILED PROPERTY VIEW */
+
+.validatedCheck {
+    width: 1.5rem;
+    vertical-align: bottom;
+}
+
+
+.propImages {
+    width: 70%;
+    /* z-index: 2; */
+    height: 28.125rem;
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.propImgSlides {
+    width: 100%;
+    height: 28.125rem;
+    position: relative;
+}
+
+.allPropPhotos {
+    position: absolute;
+    bottom: -0.8rem;
+    left: 1rem;
+}
+
+.propDetails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.propDesc {
+    width: 70%;
+    color: #0A2239;
+}
+
+.upperLowerBorders {
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    padding: 1.25rem 0;
+}
+
+.roomDetails {
+    letter-spacing: 3px;
+}
+
+.roomDetails span {
+    font-weight: bold;
+}
+
+.propResv {
+    position: fixed;
+    top : 210px;
+    right: 7%;
+    background-color: #fff;
+    width: 20%;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    color: black;
+    z-index: 1;
+}
+
+.propResv > * {
+    margin-bottom: 2rem;
+}
+
+.resvbutton {
+    font-size: 1.1rem;
+}
+
+.resvbutton:hover {
+    background-color: rgba(41,163,118, 0.90);
+}
+
+
+.propOwnerInfo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.propOwnerIcon {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.propOwnerIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#map {
+    margin-top: 1rem;
+}
+
+/* ======================= */
+/* Property Image Carousel */
+/* ======================= */
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -1.375rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.875rem;
+    transition: 0.6s ease;
+    border-radius: 0 0.19rem 0.19rem 0;
+    user-select: none;
+    text-shadow: 2px 2px 4px #717171;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.propImgDesc {
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.25);
+    font-size: 1.05rem;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.propImgSlides {
+    display: none;
+}
+
+.propImgDots {
+    cursor: pointer;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin: 0 0.125rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .propImgDots:hover {
+    background-color: #29A376;
+}
+
+
+
+/* ===================================== */
+/* See all photos of the current property*/
+/* ===================================== */
+
+.photoModalContainer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+.innerContainer{
+    width: 900px;
+    margin-top: 6rem;
+    /* overflow-y: scroll; */
+}
+
+.imgGrid{
+    width: 100%;
+    display: grid;
+    grid-template-rows:auto auto;
+    grid-template-columns:1.2fr 1.2fr;
+    /* grid-template-columns:450px 450px; */
+    grid-template-areas:
+    "image-1 image-1"
+    "image-2 image-3";
+    overflow: hidden;
+    grid-gap:2px;
+}
+
+
+.allPropImgContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.allPropImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.allPropImgContainer:hover .allPropImg{
+    transform: scale(1.2);
+}
+
+.pModalCloseButton{
+    cursor: pointer;
+    position: fixed;
+    top: 1.25rem;
+    left: 3.125rem;
+}
+
+/* specificity */
+div.showP{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ============= */
+/* detailed view */
+/* ============= */
+.detailedPhotoView{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    z-index: 1100;
+    pointer-events: none;
+    opacity: 0;
+    overflow-y: scroll;
+}
+
+/* Slideshow container */
+.slideContainer {
+    max-width: 100%;
+    height: 80%;
+    position: relative;
+    margin-top: 3.75rem;
+    display: flex;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.detailedImgSlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.detailedImgSlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.detailedImgDots {
+    cursor: pointer;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin: 0 0.125rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.prevD, .nextD {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -1.375rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.875rem;
+    transition: 0.6s ease;
+    border-radius: 0 0.19rem 0.19rem 0;
+    user-select: none;
+    text-shadow: 2px 2px 4px #717171;
+}
+
+.nextD {
+    right: 5px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevD {
+    left: 5px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prevD:hover, .nextD:hover {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.propertyGallery{
+    width: 100%;
+    height: 100%;
+}
+
+.detailedImgDots {
+    cursor: pointer;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin: 0 0.125rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+span.viewOn, span.detailedImgDots:hover {
+    background-color: #29A376;
+}
+
+.detailedCloseButton{
+    cursor: pointer;
+    position: fixed;
+    top: 1.25rem;
+    left: 3.125rem;
+}
+
+.detailedCloseButton:hover {
+    background-color: rgba(41,163,118, 0.90);
+}
+
+.detailedImgDotsActive, .detailedImgDots:hover {
+    background-color: #29A376;
+}
+
+.validatedBorder
+{
+    color: white;
+    font-size: 80%;
+    background-color: #29A376;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: -31px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    visibility: hidden;
+}
+
+.display1
+{
+    visibility: visible;
+}
+
+.validatedBorder img
+{
+    width: 20px;
+    height: 20px;
+}
+
+.disableScroll{
+    overflow-y: hidden;
+}
+
+/* animation */
+/* ========= */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.slideButtons
+{
+    text-align:center;
+    width: 70%;
+}
+
+
+@media screen and (max-width: 650px) {
+    /* Single Property View Media Query */
+    .propImages {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .propImages + div {
+        margin-top: 16.125rem;
+    }
+    
+    .propImgSlides {
+        width: 100%;
+        height: 16.125rem;
+    }
+
+    .slideButtons {
+        width: 100%;
+    }
+
+    .propImages .prev, .propImages .next {
+        top: 26%;
+    }
+
+    .allPropPhotos {
+        top: 0;
+        left: 1rem;
+        z-index: 1;
+    }
+
+    .propResv {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        top: auto;
+        height: 10rem;
+        border-radius: 0.625rem 0.625rem 0 0;
+        z-index: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .price {
+        width: 100%;
+        text-align: center;
+    }
+
+    .propOwnerIcon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .propResv > * {
+        margin-bottom: 0.2rem;
+    }
+
+    .propDesc {
+        width: 100%;
+    }
+
+    .modifyPropBtn, .allPropPhotos {
+        font-size: .8rem;
+    }
+
+    .allPropPhotos {
+        opacity: 70%;
+    }
+
+    .allPropPhotos span, .modifyPropBtn span {
+        display: none;
+    }
+
+    /* All photos view */
+    .innerContainer{
+        margin-top: 6rem;
+        width: 800px;
+    }
+
+    .imgGrid{
+        grid-template-columns:1.2fr 1.2fr;
+        
+    }
+    
+    .slideContainer {
+        
+        height: 75%;
+    }
+    
+}

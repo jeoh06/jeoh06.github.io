@@ -1,0 +1,224 @@
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 6.25rem; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+    opacity: 0;
+    transition: all 0.5s; 
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    height: 37.5rem;
+    border-radius: 1.25rem;
+}
+
+#cancel {
+    font-family: inherit;
+    /* margin-top: 10px; */
+}
+
+.confirmButton, .closeButton {
+    border-radius: 12px;
+    background-color: rgb(41, 163, 118);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 100px;
+    height: auto; 
+    border: none;
+}
+
+.cancel-modal-content {
+    border-radius: 12px;
+    width: 50%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+
+.cancellationContent {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 40px;
+} 
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .form-container {
+       width: 100%;
+       height: 100%;
+       justify-content: center;
+       align-items: center;
+       margin-left: 2.5rem;
+       padding-top: 0;
+    }
+}
+
+#banner-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    color: white;
+    background-color: #29A376;
+    z-index: 1;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #banner-container {
+        display: none;
+    }
+}
+
+.right {
+    border-radius: 0 1.25rem 1.25rem 0;
+}
+
+.left {
+    border-radius: 1.25rem 0 0 1.25rem;
+}
+
+#banner-container h2{
+    font-size: .9rem;
+    margin-top: 3%;
+}
+
+#banner-container button{
+    border: 2px white solid;
+}
+
+#signIn-container, #signUp-container {
+    flex: 1;
+    padding: 1.25rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    #signIn-container, #signUp-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.field {
+    width: 80%;
+    height: 2.5rem;
+}
+
+.password {
+    height: 3.75rem;
+}
+
+#registerNow {
+    margin-left: 1rem;
+}
+
+#registerNow:hover, #signInNow:hover, #reset {
+    background-color: rgb(41, 163, 118, 0.9);
+}
+
+#registerNow, #signInNow {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 11px;
+    margin-left: 14rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    #registerNow, #signInNow {
+        display: none;
+    }
+}
+
+.close 
+{
+    color: #aaaaaa;
+    position: absolute;
+    font-size: 1.75rem;
+    font-weight: bold;
+    z-index: 2;
+    right: 1.5rem;
+    top: 0.625rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .close {
+        right: 0.5rem;
+    }
+}
+
+.close:hover,
+.close:focus 
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalBox {
+    z-index: 1000;
+}
+
+.animate-left {
+    animation-name: animate-left;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.animate-right {
+    animation-name: animate-right;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes animate-left {
+    from {
+        left: 50%
+
+    }
+    to {
+        left: 0
+
+    }
+}
+@keyframes animate-right {
+    from {
+        left: 0
+    }
+    to {
+        left: 50%
+    }
+}
