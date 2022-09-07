@@ -1,2 +1,0 @@
- Potential fonts
- font-family: 'Quicksand', sans-serif;
