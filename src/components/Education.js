@@ -5,12 +5,14 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
+import SchoolLogo from "../uni.svg";
+import Bootcamp from "../wcoding-log.svg";
 
-class Experience extends Component {
+class Education extends Component {
   render() {
-    if (this.props.resumeExperience && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.experience;
-      var work = this.props.resumeExperience.map(function (work, i) {
+    if (this.props.resumeEducation && this.props.resumeBasicInfo) {
+      var sectionName = this.props.resumeBasicInfo.section_name.education;
+      var work = this.props.resumeEducation.map(function (work, i) {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
 
@@ -37,7 +39,13 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={
+              <img 
+                src={work.school === 'Yonsei University' || work.school === '연세대학교' ? SchoolLogo : Bootcamp} 
+                alt={work.school === 'Yonsei University' || work.school === '연세대학교' ? 'School logo' : 'Bootcamp logo'}
+                className={work.school === 'Yonsei University' || work.school === '연세대학교' ? 'vertical-timeline-element-school' : 'vertical-timeline-element-bootcamp'}
+              />
+            }
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
@@ -48,7 +56,7 @@ class Experience extends Component {
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
             >
-              {work.title}
+              {work.program}
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
@@ -93,4 +101,4 @@ class Experience extends Component {
   }
 }
 
-export default Experience;
+export default Education;

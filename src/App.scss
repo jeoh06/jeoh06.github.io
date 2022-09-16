@@ -255,6 +255,27 @@ header h1 {
 	margin: 0 !important;
 }
 
+.vertical-timeline-element-school {
+	width: 6rem;
+	height: 6rem;
+}
+
+.vertical-timeline-element-bootcamp {
+	width: 6rem;
+	height: 6rem;
+	padding: 0.5rem;
+	border-radius: 50%;
+	background-color: #8658c8;
+}
+
+@media only screen and (max-width: 1170px) {
+	.vertical-timeline-element-school,
+	.vertical-timeline-element-bootcamp {
+		width: 4rem;
+		height: 4rem;
+	}
+}
+
 @media only screen and (max-width: 1170px) {
 	.experience-icon {
 		font-size: 170%;
@@ -367,6 +388,63 @@ header h1 {
 	font-size: 1.5rem;
 }
 
+#buttons {
+	display: flex;
+	justify-content: end;
+}
+
+.code, .site {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.code:active, .site:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+.code:focus, .site:focus {
+  border-color: #485fc7;
+  outline: 0;
+}
+
+.code:hover, .site:hover {
+  border-color: #b5b5b5;
+}
+
+.code:focus:not(:active), .site:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
+.code {
+	margin-right: 1rem;
+}
+
+.site {
+	margin-right: 8rem;
+}
+
 @media (min-width: 576px) {
 	.portfolio .closeButtonResponsive {
 		display: block;
@@ -377,7 +455,7 @@ header h1 {
 }
 
 #skills {
-	background: #1F1F1F;
+	background: #0a0a0a;
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;

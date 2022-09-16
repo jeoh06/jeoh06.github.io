@@ -4,7 +4,7 @@ import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Experience from "./components/Experience";
+import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
@@ -16,8 +16,14 @@ class App extends Component {
       foo: "bar",
       resumeData: {},
       sharedData: {},
+      lang: ''
     };
   }
+
+  setLang(lang) {
+    this.state.lang = lang;
+  }
+ 
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
@@ -27,6 +33,7 @@ class App extends Component {
         ? `res_primaryLanguage.json`
         : `res_secondaryLanguage.json`;
     this.loadResumeFromPath(resumePath);
+    this.setLang(resumePath);
   }
 
   swapCurrentlyActiveLanguage(oppositeLangIconId) {
@@ -36,10 +43,10 @@ class App extends Component {
         : window.$primaryLanguageIconId;
     document
       .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
+      .setAttribute("filter", "brightness(40%)");
     document
       .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
+      .removeAttribute("filter", "brightness(40%)");
   }
 
   componentDidMount() {
@@ -95,7 +102,7 @@ class App extends Component {
           >
             <span
               className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
+              data-icon="twemoji-flag-for-flag-united-states"
               data-inline="false"
               id={window.$primaryLanguageIconId}
             ></span>
@@ -111,7 +118,7 @@ class App extends Component {
           >
             <span
               className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
+              data-icon="twemoji-flag-for-flag-south-korea"
               data-inline="false"
               id={window.$secondaryLanguageIconId}
             ></span>
@@ -124,16 +131,20 @@ class App extends Component {
         <Projects
           resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
+          lang={this.state.lang}
         />
         <Skills
           sharedSkills={this.state.sharedData.skills}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
+        <Education
+          resumeEducation={this.state.resumeData.education}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+        <Footer 
+          sharedBasicInfo={this.state.sharedData.basic_info} 
+          lang={this.state.lang}
+        />
       </div>
     );
   }

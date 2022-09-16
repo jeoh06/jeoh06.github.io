@@ -60,6 +60,7 @@ class Projects extends Component {
             show={this.state.detailsModalShow}
             onHide={detailsModalClose}
             data={this.state.deps}
+            lang={this.props.lang}
           />
         </div>
       </section>
