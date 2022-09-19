@@ -1,0 +1,129 @@
+{
+    "basic_info": {
+      "description_header": "안녕하세요!",
+      "description": "👋 저는 왭 개발자로서 일을 찾고있는 풀스택 개발자 오정건 입니다. 상호적인 웹 응용 프로그램 들을 만들 수 있기 위해, 지금 리액트와 타입스크립트를 외우고 있습니다. 모든 자바스크립트 기술과 프레임워크 에대한 관심이 많고, 프론트엔드 아니면 백엔드 든지 항상 새로 배울 것을 찾습니다. 아래 부분에서 제가 만든 프로젝트들은 살펴보새요.",
+      "section_name": {
+        "about": "자기소개",
+        "projects": "프로젝트",
+        "skills": "기술",
+        "education": "교육"
+      }
+    },
+    "projects": [
+      {
+        "title": "할 일 목록",
+        "startDate": "8월 2022년",
+        "description": "리엑트와 타입스크립트로 만든 왭 앱. 명암 모드, 타임스탬프, 드래그 앤 드롭, 등 여러가지 기능들 있습니다. 이 앱을 만들면서 여러 컴포넌트들을 걸쳐 리엑트 스테으트를 효과적으로 관리할 수 있는 방법과 리엑트 개발 환경 안에서 타입스크립트를 어떻게 시행해야 되는지 배웠습니다.",
+        "images": [
+          "images/portfolio/todo/todo.png",
+          "images/portfolio/todo/todoDark.png"
+        ],
+        "url": [],
+        "technologies": [
+          {
+            "class": "devicon-react-plain",
+            "name": "React"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-sass-plain",
+            "name": "Sass"
+          }
+        ]
+      },
+      {
+        "title": "룸 이지",
+        "startDate": "6월 2022년",
+        "description": "사람들이 한국에서 장기 주택을 찾기 도움이 될 목표로 만든 왭사이트. 이 프로젝트는 6명의 다른 개발자들과 함께 만든 것이라서 작업 흐름을 관리하기 위해 애자일/스크럼 방법론을 시행했고 깃허브를 통해 협업했습니다. 그 뿐만 아니라 빠르게 개발할 수 있게 MVC 프레임워크도 사용했습니다. 이 프로젝트를 통해 제가 개발자 팀의 일원으로서 일하는 법을 배웠습니다.",
+        "images": [
+          "images/portfolio/roomez/main.png",
+          "images/portfolio/roomez/search.png"
+        ],
+        "url": [],
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-php-plain",
+            "name": "PHP"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
+          },
+          {
+            "class": "devicon-git-plain",
+            "name": "Git"
+          }
+        ]
+      },
+      {
+        "title": "날씨 API",
+        "startDate": "5월 2022년",
+        "description": "처음 API를 사용한 경험. 이 엡은 프론트엔드 기술을 이용해서 전 세계 200,000 도시들에 대한 주간 일기예보를 제공합니다. API 콜과 JSON 오브젝트를 사용한 값진 경험이었습니다.",
+        "images": [
+          "images/portfolio/weather/weatherApp.png",
+          "images/portfolio/weather/sunnySeoul.png"
+        ],
+        "url": [],
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "더블유코딩",
+        "program": "풀스택 왭 개발 부트캠프",
+        "years": "04.2022 - 06.2022",
+        "mainTech": [
+          "더블유코딩"
+        ],
+        "technologies": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "PHP",
+          "JSON",
+          "REST API",
+          "MySQL",
+          "MVC",
+          "Agile",
+          "Scrum"
+        ]
+      },
+      {
+        "school": "연세대학교",
+        "program": "전공: 경제학 | 부전공: 국제학",
+        "years": "09.2015 - 08.2022",
+        "mainTech": [
+          "연세대학교"
+        ],
+        "technologies": []
+      }
+    ]
+  }

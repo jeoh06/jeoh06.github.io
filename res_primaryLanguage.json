@@ -1,0 +1,129 @@
+{
+    "basic_info": {
+      "description_header": "Hi!",
+      "description": "👋 I'm Kevin Oh. I'm a developer with a passion for developing interactive web applications. Currently focused on React and Typescript, but I'm always interested in learning new technologies for frontend or backend. Check out some of my projects below.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "education": "Education"
+      }
+    },
+    "projects": [
+      {
+        "title": "Todo List",
+        "startDate": "Aug 2022",
+        "description": "Simple todo list made using React and Typescript. Includes features such as a light/dark mode, timestamps for list items, and drag and drop functionality. Working on the app taught me how to how to effectively manage state across multiple components using React as well as how to implement Typescript's statically enforced type checking within a React ecosystem.",
+        "images": [
+          "images/portfolio/todo/todo.png",
+          "images/portfolio/todo/todoDark.png"
+        ],
+        "url": [],
+        "technologies": [
+          {
+            "class": "devicon-react-plain",
+            "name": "React"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-sass-plain",
+            "name": "Sass"
+          }
+        ]
+      },
+      {
+        "title": "Room EZ",
+        "startDate": "June 2022",
+        "description": "The biggest project that I have worked on to date. This site for finding long-term housing in Korea was built with a team of 6 other developers. We utlizied a MVC model in development and implemented Agile/Scrum methodologies to manage our workflow. I learned a lot about writing software as part of a team and collaborating through github.",
+        "images": [
+          "images/portfolio/roomez/main.png",
+          "images/portfolio/roomez/search.png"
+        ],
+        "url": [],
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-php-plain",
+            "name": "PHP"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
+          },
+          {
+            "class": "devicon-git-plain",
+            "name": "Git"
+          }
+        ]
+      },
+      {
+        "title": "Weather API",
+        "startDate": "May 2022",
+        "description": "My first app working with an API. I had to develop front-end implementation for an app that displays a weekly weather forecast for 200,000 cities around the world. It was a valuable experience working with API calls and JSON objects.",
+        "images": [
+          "images/portfolio/weather/weatherApp.png",
+          "images/portfolio/weather/sunnySeoul.png"
+        ],
+        "url": [],
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "wcoding",
+        "program": "Full-stack web development bootcamp",
+        "years": "04.2022 - 06.2022",
+        "mainTech": [
+          "wcoding"
+        ],
+        "technologies": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "PHP",
+          "JSON",
+          "REST API",
+          "MySQL",
+          "MVC",
+          "Agile",
+          "Scrum"
+        ]
+      },
+      {
+        "school": "Yonsei University",
+        "program": "B.A. Economics | Minor: International Studies",
+        "years": "09.2015 - 08.2022",
+        "mainTech": [
+          "Yonsei University"
+        ],
+        "technologies": []
+      }
+    ]
+  }
