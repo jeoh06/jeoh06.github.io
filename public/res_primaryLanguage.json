@@ -18,7 +18,7 @@
           "images/portfolio/todo/todo.png",
           "images/portfolio/todo/todoDark.png"
         ],
-        "url": [],
+        "url": ["https://github.com/jeoh06/TODO", "https://jeoh06.github.io/TODO/"],
         "technologies": [
           {
             "class": "devicon-react-plain",

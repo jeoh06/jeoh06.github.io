@@ -78,8 +78,8 @@ class ProjectDetailsModal extends Component {
             </AwesomeSlider>
           </div>
           <div id="buttons">
-            <a href="" target="_blank" className="code">{this.props.lang === 'res_primaryLanguage.json' ? 'View Code' : '코드 보기'}</a>
-            <a href="" target="_blank" className="site">{this.props.lang === 'res_primaryLanguage.json' ? 'Go to site' : '시이트 이동'}</a>
+            <a href={url[0]} target="_blank" className="code">{this.props.lang === 'res_primaryLanguage.json' ? 'View Code' : '코드 보기'}</a>
+            <a href={url[1]} target="_blank" className="site">{this.props.lang === 'res_primaryLanguage.json' ? 'Go to site' : '시이트 이동'}</a>
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
