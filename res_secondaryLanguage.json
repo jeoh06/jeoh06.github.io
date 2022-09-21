@@ -13,12 +13,12 @@
       {
         "title": "할 일 목록",
         "startDate": "8월 2022년",
-        "description": "리엑트와 타입스크립트로 만든 왭 앱. 명암 모드, 타임스탬프, 드래그 앤 드롭, 등 여러가지 기능들 있습니다. 이 앱을 만들면서 여러 컴포넌트들을 걸쳐 리엑트 스테으트를 효과적으로 관리할 수 있는 방법과 리엑트 개발 환경 안에서 타입스크립트를 어떻게 시행해야 되는지 배웠습니다.",
+        "description": "리엑트와 타입스크립트로 만든 왭 앱. 명암 모드, 타임스탬프, 드래그 앤 드롭, 등 여러가지 유용한 기능이 있습니다. 이 앱을 만들면서 여러 컴포넌트들을 걸쳐 리엑트 스테으트를 효과적으로 관리할 수 있는 방법과 리엑트 개발 환경 안에서 타입스크립트를 어떻게 시행해야 되는지 배웠습니다.",
         "images": [
           "images/portfolio/todo/todo.png",
           "images/portfolio/todo/todoDark.png"
         ],
-        "url": [],
+        "url": ["https://github.com/jeoh06/TODO", "https://jeoh06.github.io/TODO/"],
         "technologies": [
           {
             "class": "devicon-react-plain",
@@ -42,7 +42,7 @@
           "images/portfolio/roomez/main.png",
           "images/portfolio/roomez/search.png"
         ],
-        "url": [],
+        "url": ["github.com", "github.com"],
         "technologies": [
           {
             "class": "devicon-html5-plain",
@@ -78,7 +78,7 @@
           "images/portfolio/weather/weatherApp.png",
           "images/portfolio/weather/sunnySeoul.png"
         ],
-        "url": [],
+        "url": ["github.com", "github.com"],
         "technologies": [
           {
             "class": "devicon-html5-plain",
