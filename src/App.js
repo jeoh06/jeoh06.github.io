@@ -20,11 +20,6 @@ class App extends Component {
     };
   }
 
-  setLang(lang) {
-    this.state.lang = lang;
-  }
- 
-
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
@@ -33,7 +28,7 @@ class App extends Component {
         ? `res_primaryLanguage.json`
         : `res_secondaryLanguage.json`;
     this.loadResumeFromPath(resumePath);
-    this.setLang(resumePath);
+    this.setState({ lang: resumePath}); 
   }
 
   swapCurrentlyActiveLanguage(oppositeLangIconId) {
