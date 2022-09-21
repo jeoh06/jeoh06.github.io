@@ -13,6 +13,7 @@ class ProjectDetailsModal extends Component {
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
+
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -78,8 +79,8 @@ class ProjectDetailsModal extends Component {
             </AwesomeSlider>
           </div>
           <div id="buttons">
-            <a href={url[0]} target="_blank" className="code">{this.props.lang === 'res_primaryLanguage.json' ? 'View Code' : '코드 보기'}</a>
-            <a href={url[1]} target="_blank" className="site">{this.props.lang === 'res_primaryLanguage.json' ? 'Go to site' : '시이트 이동'}</a>
+            <a href={url ? url[0] : null} target="_blank" className="code">{this.props.lang === 'res_primaryLanguage.json' ? 'View Code' : '코드 보기'}</a>
+            <a href={url ? url[1] : null} target="_blank" className="site">{this.props.lang === 'res_primaryLanguage.json' ? 'Go to site' : '시이트 이동'}</a>
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
