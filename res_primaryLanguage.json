@@ -42,7 +42,7 @@
           "images/portfolio/roomez/main.png",
           "images/portfolio/roomez/search.png"
         ],
-        "url": ["github.com", "github.com"],
+        "url": ["https://github.com/jeoh06/Room-EZ", "github.com"],
         "technologies": [
           {
             "class": "devicon-html5-plain",
@@ -78,7 +78,7 @@
           "images/portfolio/weather/weatherApp.png",
           "images/portfolio/weather/sunnySeoul.png"
         ],
-        "url": ["github.com", "github.com"],
+        "url": ["https://github.com/jeoh06/Weather-App", "https://jeoh06.github.io/Weather-App/"],
         "technologies": [
           {
             "class": "devicon-html5-plain",
