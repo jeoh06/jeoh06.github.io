@@ -441,19 +441,20 @@ header h1 {
 	margin-right: 8rem;
 }
 
-.site {
-	margin-right: 1rem;
-}
 @media only screen and (max-width: 991px) and (min-width: 769px) { 
-	.site {
+	.code {
 		margin-right: 5.5rem;
 	}
 }
 
 @media only screen and (max-width: 768px) { 
-	.site {
+	.code {
 		margin-right: 1.5rem;
 	}
+}
+
+.site {
+	margin-right: 1rem;
 }
 
 @media (min-width: 576px) {
