@@ -1,5 +1,5 @@
-// @import '../src/scss/themes/theme-dark.scss';
-// @import '../src/scss/themes/theme-light.scss';
+@import '../src/scss/themes/theme-dark.scss';
+@import '../src/scss/themes/theme-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
 html {
@@ -438,11 +438,11 @@ header h1 {
 }
 
 .code {
-	margin-right: 1rem;
+	margin-right: 8rem;
 }
 
 .site {
-	margin-right: 8rem;
+	margin-right: 1rem;
 }
 @media only screen and (max-width: 991px) and (min-width: 769px) { 
 	.site {
