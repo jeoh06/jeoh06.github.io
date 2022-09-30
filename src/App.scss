@@ -93,6 +93,12 @@ header h1 {
 	border: 5px solid #D7CAAA;
 }
 
+@media only screen and (max-width: 500px){
+	.slider-image {
+		height: 27rem;
+	}
+}
+
 .slider-tab {
 	background-color: #D7CAAA;
 	height: 25px;
