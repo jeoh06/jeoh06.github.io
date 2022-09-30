@@ -5,7 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
-import SchoolLogo from "../uni.png";
+import SchoolLogo from "../uni.webp";
 import Bootcamp from "../wcoding-log.svg";
 
 class Education extends Component {

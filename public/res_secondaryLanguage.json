@@ -15,8 +15,8 @@
         "startDate": "8월 2022년",
         "description": "리엑트와 타입스크립트로 만든 왭 앱. 명암 모드, 타임스탬프, 드래그 앤 드롭, 등 여러가지 유용한 기능이 있습니다. 이 앱을 만들면서 여러 컴포넌트들을 걸쳐 리엑트 스테으트를 효과적으로 관리할 수 있는 방법과 리엑트 개발 환경 안에서 타입스크립트를 어떻게 시행해야 되는지 배웠습니다.",
         "images": [
-          "images/portfolio/todo/todo.png",
-          "images/portfolio/todo/todoDark.png"
+          "images/portfolio/todo/todo.webp",
+          "images/portfolio/todo/todoDark.webp"
         ],
         "url": ["https://github.com/jeoh06/TODO", "https://jeoh06.github.io/TODO/index.html"],
         "technologies": [
@@ -39,8 +39,8 @@
         "startDate": "6월 2022년",
         "description": "사람들이 한국에서 장기 주택을 찾기 도움이 될 목표로 만든 왭사이트. 이 프로젝트는 6명의 다른 개발자들과 함께 만든 것이라서 작업 흐름을 관리하기 위해 애자일/스크럼 방법론을 시행했고 깃허브를 통해 협업했습니다. 그 뿐만 아니라 빠르게 개발할 수 있게 MVC 프레임워크도 사용했습니다. 이 프로젝트를 통해 제가 개발자 팀의 일원으로서 일하는 법을 배웠습니다.",
         "images": [
-          "images/portfolio/roomez/main.png",
-          "images/portfolio/roomez/search.png"
+          "images/portfolio/roomez/main.webp",
+          "images/portfolio/roomez/search.webp"
         ],
         "url": ["https://github.com/jeoh06/Room-EZ", "github.com"],
         "technologies": [
@@ -75,8 +75,8 @@
         "startDate": "5월 2022년",
         "description": "처음 API를 사용한 경험. 이 엡은 프론트엔드 기술을 이용해서 전 세계 200,000 도시들에 대한 주간 일기예보를 제공합니다. API 콜과 JSON 오브젝트를 사용한 값진 경험이었습니다.",
         "images": [
-          "images/portfolio/weather/weatherApp.png",
-          "images/portfolio/weather/sunnySeoul.png"
+          "images/portfolio/weather/weatherApp.webp",
+          "images/portfolio/weather/sunnySeoul.webp"
         ],
         "url": ["https://github.com/jeoh06/Weather-App", "https://jeoh06.github.io/Weather-App/index.html"],
         "technologies": [
