@@ -18,7 +18,7 @@
           "images/portfolio/todo/todo.png",
           "images/portfolio/todo/todoDark.png"
         ],
-        "url": ["https://github.com/jeoh06/TODO", "https://jeoh06.github.io/TODO/"],
+        "url": ["https://github.com/jeoh06/TODO", "https://jeoh06.github.io/TODO/index.html"],
         "technologies": [
           {
             "class": "devicon-react-plain",
@@ -78,7 +78,7 @@
           "images/portfolio/weather/weatherApp.png",
           "images/portfolio/weather/sunnySeoul.png"
         ],
-        "url": ["https://github.com/jeoh06/Weather-App", "https://jeoh06.github.io/Weather-App/"],
+        "url": ["https://github.com/jeoh06/Weather-App", "https://jeoh06.github.io/Weather-App/index.html"],
         "technologies": [
           {
             "class": "devicon-html5-plain",
